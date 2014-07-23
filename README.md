@@ -32,10 +32,9 @@ Host File Formats
 Mikto accepts a host file with a mixture of [[http[s]://]Hostname/IP[:port]
 
 Examples:
-* http://hostname:80
-* 192.168.1.20
-* https://192.168.1.30
-* hostname.tld:8080
+* protocol://hostname.or.ip.address:port
+* hostname.or.ip.address:port
+* hostname.or.ip.address
 
 Dependencies
 ------------
