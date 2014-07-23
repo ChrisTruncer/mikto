@@ -24,8 +24,18 @@ Usage
 * -a = Reattach to Detached Session
 
 **Sessions Management**
-* When Daemonizing Detach Session with 'ctrl+ad' .
-* Session can be reattached using -a or simply calling 'screen -r mikto'.
+* When daemonizing (-d switch), detach from session with 'ctrl+ad' .
+* Session can be reattached using the -a switch or simply calling 'screen -r mikto'.
+
+Host File Formats
+-----------------
+Mikto accepts a host file with a mixture of [[http[s]://]Hostname/IP[:port]
+
+Examples:
+* http://hostname:80
+* 192.168.1.20
+* https://192.168.1.30
+* hostname.tld:8080
 
 Dependencies
 ------------
