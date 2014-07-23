@@ -11,19 +11,19 @@ Usage
 
  ./Mikto.sh -f [HOST FILE] [OPTIONS]
 
-***Standard Options***
+**Standard Options**
 * -f = Host File ([[http[s]://]Hostname/IP[:Port] Format)
 * -w = Number of Nikto Threads
 * -t = Timeout (Seconds)
 * -d = Daemonize
 * -h = Show this Help Menu with Credits
 
-***Daemonized Options (Use these switches after detaching from a session.)***
+**Daemonized Options (Use these switches after detaching from a session.)**
 * -v = Show Running Threads
 * -k = Kill Nikto Thread
 * -a = Reattach to Detached Session
 
-***Sessions Management***
+**Sessions Management**
 * When Daemonizing Detach Session with 'ctrl+ad' .
 * Session can be reattached using -a or simply calling 'screen -r mikto'.
 
