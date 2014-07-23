@@ -8,7 +8,8 @@ Mikto is a wrapper script that provides easy automation, management, and multith
 Usage
 -----
 **Running Mikto**
- ./Mikto.sh -f [HOST FILE] [OPTIONS]
+
+./Mikto.sh -f [HOST FILE] [OPTIONS]
 
 **Standard Options**
 * -f = Host File ([[http[s]://]Hostname/IP[:Port] Format)
