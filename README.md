@@ -11,8 +11,6 @@ Usage
 
  ./Mikto.sh -f [HOST FILE] [OPTIONS]
 
-**Supported Switches:**
-
 ***Standard Options***
 * -f = Host File ([[http[s]://]Hostname/IP[:Port] Format)
 * -w = Number of Nikto Threads
