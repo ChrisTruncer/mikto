@@ -21,7 +21,7 @@ Usage
 * -h = Show this Help Menu with Credits
 
 [Daemonized Options]
-(Used after detaching from a session.)
+Note: Use these switches after detaching from a session.
 * -v = Show Running Threads
 * -k = Kill Nikto Thread
 * -a = Reattach to Detached Session
