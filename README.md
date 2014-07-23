@@ -20,8 +20,7 @@ Usage
 * -d = Daemonize
 * -h = Show this Help Menu with Credits
 
-***Daemonized Options***
-Note: Use these switches after detaching from a session.
+***Daemonized Options (Use these switches after detaching from a session.)***
 * -v = Show Running Threads
 * -k = Kill Nikto Thread
 * -a = Reattach to Detached Session
