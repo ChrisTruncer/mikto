@@ -12,6 +12,7 @@ Usage
  ./Mikto.sh -f [HOST FILE] [OPTIONS]
 
 **Supported Switches:**
+
 [Standard Options]
 * -f = Host File ([[http[s]://]Hostname/IP[:Port] Format)
 * -w = Number of Nikto Threads
@@ -19,7 +20,8 @@ Usage
 * -d = Daemonize
 * -h = Show this Help Menu with Credits
 
-[Daemonized Options] (Used after detaching from a session.)
+[Daemonized Options]
+(Used after detaching from a session.)
 * -v = Show Running Threads
 * -k = Kill Nikto Thread
 * -a = Reattach to Detached Session
