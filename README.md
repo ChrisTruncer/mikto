@@ -13,7 +13,7 @@ Usage
 
 **Supported Switches:**
 
-[Standard Options]
+***Standard Options***
 * -f = Host File ([[http[s]://]Hostname/IP[:Port] Format)
 * -w = Number of Nikto Threads
 * -t = Timeout (Seconds)
