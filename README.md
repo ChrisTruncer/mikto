@@ -8,7 +8,6 @@ Mikto is a wrapper script that provides easy automation, management, and multith
 Usage
 -----
 **Running Mikto**
-
  ./Mikto.sh -f [HOST FILE] [OPTIONS]
 
 **Standard Options**
@@ -29,7 +28,7 @@ Usage
 
 Host File Formats
 -----------------
-Mikto accepts a host file with a mixture of [[http[s]://]Hostname/IP[:port]
+Mikto accepts a host file with a mixture of [[http[s]://]Hostname/IP[:port] formats.
 
 Examples:
 * protocol://hostname.or.ip.address:port
@@ -39,7 +38,6 @@ Examples:
 
 Dependencies
 ------------
-
 * Nikto
 * Bash
 * Screen
