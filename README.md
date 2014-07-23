@@ -33,6 +33,7 @@ Mikto accepts a host file with a mixture of [[http[s]://]Hostname/IP[:port]
 
 Examples:
 * protocol://hostname.or.ip.address:port
+* protocol://hostname.or.ip.address
 * hostname.or.ip.address:port
 * hostname.or.ip.address
 
