@@ -24,7 +24,7 @@ Usage
 * -a = Reattach to Detached Session
 
 **Sessions Management**
-* When daemonizing (-d switch), detach from session with 'ctrl+ad' .
+* When daemonizing (-d switch), detach from session with 'ctrl+a ctrl+d' .
 * Session can be reattached using the -a switch or simply calling 'screen -r mikto'.
 
 Host File Formats
