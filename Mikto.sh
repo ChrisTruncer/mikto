@@ -2,12 +2,13 @@
 
 # Global Variables
 fail=0
+args=${@}
 
 # Print Title Function
 func_title(){
   clear
   echo '======================================================================'
-  echo ' Mikto.sh | [Version]: 1.1.0 | [Updated]: 07.22.2014'
+  echo ' Mikto.sh | [Version]: 1.1.1 | [Updated]: 11.27.2014'
   echo '======================================================================'
 }
 
@@ -28,9 +29,8 @@ func_help(){
   echo '             -k = Kill Nikto Thread'
   echo '             -a = Reattach to Detached Session'
   echo
-  echo '[Session].: When Daemonizing Detach Session with ctrl+ad'
+  echo '[Session].: When Daemonizing Detach Session with ctrl+a ctrl+d'
   echo
-  exit 0
 }
 
 # Validate File Function
@@ -96,8 +96,8 @@ func_run(){
   # Daemonize Statement
   if [[ ${daemon} -eq '2' ]]; then
     screen -dmS mikto sh -c 'echo [*] Daemonizing... ; exec bash'
-    screen -S mikto -p 0 -X stuff "echo ; ${0} $# $(printf \\r)"
-    screen -r mikto
+    screen -S mikto -p 0 -X stuff "echo ; ${0} ${args} $(printf \\r)"
+    screen -r
     exit 0
   fi
 
@@ -106,6 +106,7 @@ func_run(){
     echo '[>] Setting Default Threads: 5'
     threads=5
   fi
+
   if [[ ${timeout} == '' ]]; then
     echo '[>] Setting Default Timeout: 10'
     timeout=10
@@ -141,14 +142,15 @@ for dep in screen nikto; do
     ((fail++))
   fi
 done
+
 if [[ ${fail} -gt '0' ]]; then
-  echo '[Error]...: Install Dependencies Above Before Using Mikto.'
+  echo '[Error]...: Install Above Dependencies Before Using Mikto.'
   echo
   exit 1
 fi
 
 # Show Help If No Arguments
-if [[ $# -eq 0 ]]; then
+if [[ ${#} -eq 0 ]]; then
   func_help
 fi
 
