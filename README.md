@@ -12,7 +12,7 @@ Usage
 ./Mikto.sh -f [HOST FILE] [OPTIONS]
 
 **Standard Options**
-* -f = Host File ([[http[s]://]Hostname/IP[:Port] Format)
+* -f = Host File ([[http[s]://]Hostname/IP[:Port][/path/to/directory] Format)
 * -w = Number of Nikto Threads
 * -t = Timeout (Seconds)
 * -d = Daemonize
@@ -29,9 +29,11 @@ Usage
 
 Host File Formats
 -----------------
-Mikto accepts a host file with a mixture of [[http[s]://]Hostname/IP[:port] formats.
+Mikto accepts a host file with a mixture of [[http[s]://]Hostname/IP[:port][/path/to/directory] formats.
 
 Examples:
+* protocol://hostname.or.ip.address:port/path/to/directory
+* protocol://hostname.or.ip.address/path/to/directory
 * protocol://hostname.or.ip.address:port
 * protocol://hostname.or.ip.address
 * hostname.or.ip.address:port

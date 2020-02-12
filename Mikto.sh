@@ -119,8 +119,8 @@ func_run(){
     do
       sleep 10
     done
-    host=$(echo ${i}|sed -e 's,http.*://,,g')
-    file=$(echo ${i}|sed -e 's,http.*://,,g' -e 's/:/-/')
+    host=${i}
+    file=$(echo ${i}|sed -e 's,http.*://,,g' -e 's/:/-/' -e 's,/,_,g')
     echo "[*] Nikto Thread Started On: ${host} [${host_num}/${host_cnt}]"
     nikto -host ${host} -timeout ${timeout} > ${file}.txt &
     ((host_num++))
